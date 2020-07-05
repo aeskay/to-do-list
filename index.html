@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eskay Todo List</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="todo.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Manrope:wght@800&family=Karla:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<section id="sectionOne">
+	<div id="clipped-title1">
+		<h1 class="tc">To-Do List</h1>
+	</div>
+	<p class="tc">By Eskay</p>
+</section>
+
+<section class="vh-100 w-100 tc" id="sectionTwo">
+	<h3 id="instHead"><u>Click here for Instructions</u></h3>
+	<div id="instructDiv" class="hide">
+		<h3>INSTRUCTIONS</h3>
+		<p>Simply enter your tasks one after the other in the text filed below<br/><br/>
+		Click on the Add Button to add this task to the list<br/><br/>
+		Click on a task when you're done to strike it out<br/><br/>
+		Click on the delete icon to delete unwanted task<br/><br/>
+		Enjoy!!!
+		<br/><br/>
+		<p id="closeBar"><u>CLOSE</u></p>
+	</p>
+	</div>
+	<div id="listHead">
+		<input type="text" name="list" id="inputField" placeholder="What do you want to do next?"/>
+		<button id="inputBtn" onclick="createList()">ADD TO LIST</button>
+	</div>
+	<div>
+		<p id="errorMsg"></p>
+	</div>
+	<div id="todoList" class="tc">
+		<ul id="listGroup">
+			<li class="grow">Go to the movies</li>
+			<li class=" grow">Read a book</li>
+			<li class="checked grow">Call a friend</li>
+			<li class="grow">Have an Exercise</li>
+			<li class="grow">Have some sleep</li>
+		</ul>
+	</div>
+</section>
+<section id="footer">
+	<div  id="footerText">
+		<p>Created by SKA Technologies. Copyright - 2020</p>
+	</div>
+</section>
+<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
